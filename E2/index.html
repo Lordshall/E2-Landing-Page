@@ -5,20 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing_Page</title>
     <link rel="stylesheet" href="Style.css" />
+    <!-- Linkeando archivos mediaqueries -->
+    <link rel="stylesheet" href="./mediaqueries.css" />
   </head>
   <body>
     <header>
       <img src="./Assets/Caribbean_Style.png" class="logo" alt="Salsa Logo" />
       <!-- Nav -->
       <nav class="navbar" class="img-fondo">
+        <!-- Agreganos el input y label para la funcionalidad del menu -->
+        <label for="menu-toggle" class="menu-label">
+          <img src="./Assets/Menu_icon.ico" alt="menu-icon" class="menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
-          <li class="nav__link"><a href="#">Home</a></li>
-          <li class="nav__link"><a href="#">History</a></li>
-          <li class="nav__link"><a href="#">Sample</a></li>
-          <li class="nav__link"><a href="#">Finding</a></li>
+          <li class="nav__link"><a href="#hero">Home</a></li>
+          <li class="nav__link"><a href="#info">History</a></li>
+          <li class="nav__link"><a href="#samples">Sample</a></li>
+          <li class="nav__link"><a href="#products">Finding</a></li>
         </ul>
         <!-- Carrito -->
-        <img src="./Assets/Download.svg" alt="buying car" class="cart-icon" />
+        <!-- Agragamos input y label para la funcionalidad del carrito -->
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./Assets/Shopping_cart_icon-icons.com_54796.png"
+            alt="buying car"
+            class="cart-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <!-- Agregar el carrito -->
+        <div class="cart">
+          <h2>Your Resources</h2>
+          <!-- Productos -->
+          <div class="cart-item">
+            <img
+              src="./Assets/Trumpet.jpg"
+              alt="Resouces cart"
+              class="Resources"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Piano</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">25,000 USD</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./Assets/Trumpet.jpg"
+              alt="Resouces cart"
+              class="Resources"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Piano</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">25,000 USD</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./Assets/Trumpet.jpg"
+              alt="Resouces cart"
+              class="Resources"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Piano</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">25,000 USD</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./Assets/Trumpet.jpg"
+              alt="Resouces cart"
+              class="Resources"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Piano</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">25,000 USD</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./Assets/Trumpet.jpg"
+              alt="Resouces cart"
+              class="Resources"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Piano</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">25,000 USD</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- Divisor -->
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Grand Total:</p>
+            <span>500,000 USD</span>
+          </div>
+          <button class="btn-load">Buy</button>
+        </div>
       </nav>
     </header>
 
@@ -67,7 +184,7 @@
 
       <!-- History -->
       <section id="info">
-        <h2>Descubre, disfuta y baila al ritmo de la Salsa</h2>
+        <h2>Find out, enjoy and dance the rhythm of Salsa</h2>
         <div class="info-cards-container">
           <!-- Card 1 -->
           <div class="info-card">
@@ -78,8 +195,9 @@
             />
             <h3>Get your Membership</h3>
             <p>
-              Con los distintos niveles de membresia accede a recursos unicos
-              sobre el maravilloso mundo de la salsa y sus distintos ritmos
+              With the different membership´s levels you can get unique
+              resources about the wonder mundo de la salsa and their kind of
+              rhythm.
             </p>
           </div>
           <!-- Card 2 -->
@@ -91,12 +209,12 @@
             />
             <h3>Add According your Likes</h3>
             <p>
-              Los mejores equipos, accesorios musicales y bibliografia oficial
-              para la compra/venta. Instrumentos unicos autografiados para
-              adquirir.
+              Get the best equipment, musical accessories and oficial
+              bibliography for Buying/ Selling. Collectible, originals and
+              autographed instruments only for acquiring.
             </p>
           </div>
-          <!-- Card 2 -->
+          <!-- Card 3 -->
           <div class="info-card">
             <img
               src="./Assets/gramophone.png"
@@ -105,9 +223,9 @@
             />
             <h3>Premier and Ondemand Zone</h3>
             <p>
-              acceso a los ultimos eventos, material inedito y Ondemand para que
-              estes mas cerca de tus artistas favoritos (Sujeto a
-              disponibilidad)
+              Access to the las events, inedit material live and On Demand so
+              you can get closer to yor favorites salsa artist (Under
+              availability).
             </p>
           </div>
         </div>
@@ -118,7 +236,7 @@
         <!-- info -->
         <div class="samples-info">
           <h2>
-            Find your favorite musicals Instruments, Assets and Partitures
+            Find your favorite musicals Instruments out, Assets and Partitures
           </h2>
           <div class="samples-text">
             <p>
@@ -130,9 +248,9 @@
         </div>
         <!-- cards -->
         <div class="samples-cards">
-          <img src="./Assets/Parte.png" alt="Parte" class="Parte" />
-          <img src="./Assets/Radio.png" alt="Radio" class="Radio" />
-          <img src="./Assets/Couple.png" alt="Couple" class="Couple" />
+          <img src="./Assets/Partiture.jpg" alt="Parte" class="Parte" />
+          <img src="./Assets/Radio3.jpg" alt="Radio" class="Radio" />
+          <img src="./Assets/Couple2.jpg" alt="Couple" class="Couple" />
         </div>
       </section>
 
@@ -142,24 +260,239 @@
 
         <!-- Categorias -->
         <div class="categories">
-          <button class="category active">🎹Melodia</button>
+          <button class="category active">🎹Melodies</button>
           <button class="category">🥁Percusion</button>
-          <button class="category">🎺Metales</button>
-          <button class="category">🎸Cuerdas</button>
-          <button class="category">💃Ritmos</button>
+          <button class="category">🎺Metals</button>
+          <button class="category">🎸Strings</button>
+          <button class="category">💃Rhytms</button>
         </div>
+
         <!-- Productos -->
-        <!-- <div class="products-container">
-          <img src="./Assets/piano-cola-boston-gp178-profesional-nuevo-edicion-especial-rainbow-performance-edition-rojo-teclado-1200x825.png" alt="Piano" class="Piano">
-      
-          <div class="product.info">
-            <div class="product top">
-              <h3>Piano</h3>
-              <p>Current Price</p>
+        <div class="products-container">
+          <!-- Producto 1 -->
+          <div class="products">
+            <img src="./Assets/Piano.png" alt="Piano" class="Piano" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                <h3>Classic Piano</h3>
+                <p>Current Value:</p>
+              </div>
+
+              <!-- Mid -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img
+                    src="./Assets/richie_solo.jpg"
+                    alt="richie"
+                    class="user"
+                  />
+                  <div>
+                    <span>Played by:</span>
+                    <p>Richie Ray "The Gifted"</p>
+                  </div>
+                </div>
+                <b>350,000 us$</b>
+              </div>
+
+              <!-- Botton -->
+              <div class="product-bot">
+                <button class="btn-add">Add</button>
+              </div>
             </div>
           </div>
-        </div> -->
+
+          <!-- Producto 2 -->
+          <div class="products">
+            <img src="./Assets/Keyboards.jpg" alt="Piano" class="Piano" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                <h3>K32p Keyboars</h3>
+                <p>Current Value:</p>
+              </div>
+
+              <!-- Mid -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img
+                    src="./Assets/PapoLucca.jpg"
+                    alt="papoluca"
+                    class="user"
+                  />
+                  <div>
+                    <span>Played by:</span>
+                    <p>Papo Lucca "The Master"</p>
+                  </div>
+                </div>
+                <b>280,000 us$</b>
+              </div>
+
+              <!-- Botton -->
+              <div class="product-bot">
+                <button class="btn-add">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="products">
+            <img src="./Assets/PR_MARACAS.jpg" alt="Maracas" class="Piano" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                <h3>Flags Maracas</h3>
+                <p>Current Value:</p>
+              </div>
+
+              <!-- Mid -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img
+                    src="./Assets/Maracas.jpg"
+                    alt="RubenBlades"
+                    class="user"
+                  />
+                  <div>
+                    <span>Played by:</span>
+                    <p>Rubén Blades "The Poet"</p>
+                  </div>
+                </div>
+                <b>2,500 us$</b>
+              </div>
+
+              <!-- Botton -->
+              <div class="product-bot">
+                <button class="btn-add">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="products">
+            <img src="./Assets/Bass2.jpg" alt="Bass" class="Piano" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                <h3>Electrical Bass</h3>
+                <p>Current Value:</p>
+              </div>
+
+              <!-- Mid -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img
+                    src="./Assets/JoshGonzalez.JPG"
+                    alt="JoshGonzalez"
+                    class="user"
+                  />
+                  <div>
+                    <span>Played by:</span>
+                    <p>Josh Gonzalez "The Rhythm"</p>
+                  </div>
+                </div>
+                <b>10,000 us$</b>
+              </div>
+
+              <!-- Botton -->
+              <div class="product-bot">
+                <button class="btn-add">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="products">
+            <img src="./Assets/Tumbadora2.PNG" alt="Tumbadora" class="Piano" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                <h3>Tumbadoras</h3>
+                <p>Current Value:</p>
+              </div>
+
+              <!-- Mid -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img
+                    src="./Assets/Eliot_Torrest2.JPG"
+                    alt="Eliot"
+                    class="user"
+                  />
+                  <div>
+                    <span>Played by:</span>
+                    <p>Eliot Torres "The Style"</p>
+                  </div>
+                </div>
+                <b>5,000 us$</b>
+              </div>
+
+              <!-- Botton -->
+              <div class="product-bot">
+                <button class="btn-add">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="products">
+            <img src="./Assets/trompeta.jpg" alt="Trumpet" class="Piano" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                <h3>Trumpet</h3>
+                <p>Current Value:</p>
+              </div>
+
+              <!-- Mid -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img
+                    src="./Assets/willie-colon-10082012-640.jpg"
+                    alt="Willie"
+                    class="user"
+                  />
+                  <div>
+                    <span>Played by:</span>
+                    <p>Willie Colon "Trumpet Man"</p>
+                  </div>
+                </div>
+                <b>20,000 us$</b>
+              </div>
+
+              <!-- Botton -->
+              <div class="product-bot">
+                <button class="btn-add">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-load">More</button>
       </section>
     </main>
+
+    <footer>
+      <nav>
+        <ul class="footer-links">
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Want to Colaborate</a></li>
+          <li><a href="#">Help assistance</a></li>
+        </ul>
+      </nav>
+      <p>Set on 🔥, then made by <span>LORDSHALL</span></p>
+    </footer>
   </body>
 </html>
